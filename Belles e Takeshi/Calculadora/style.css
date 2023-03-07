@@ -1,0 +1,77 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.card{
+ display:inline-block;
+ align-items: center;
+ margin-left: 470px;
+ justify-content: center;
+ border-radius: 10px;
+
+ 
+}
+.h1{
+    color:white;
+    text-align: center;
+
+    
+}
+.result{
+    color: #355C7D;
+    display: flex;
+    left: 30px;
+    margin-left:30px;
+
+}
+
+.btnCalcular{
+    
+    cursor:pointer;
+    width: 90px;
+    height: 30px;
+   margin-left: 280px;
+   background-color: #5285b3 ;
+   color:white;
+}   
+input{
+    margin-left: 18px;
+    margin-right: 18px;
+    border-radius: 8px;
+    width: 245px;
+    height: 28px;
+    border:0.2px;
+    outline: none;
+}
+.fieldset{
+    color:white;
+    background-color: rgb(248, 244, 245);
+    max-width: 800px;
+    height: 300px;
+    border-radius:8px;
+    border:none;
+    
+}
+.h2calc{
+color:#355C7D;
+text-align: center;
+}
+
+.estapara{
+    color:#355C7D;
+}
+.h2{
+    color:white;
+}
+h1{
+    color:white;
+}

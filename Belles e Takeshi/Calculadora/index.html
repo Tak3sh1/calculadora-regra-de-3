@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="components/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <head>
+    <style>
+   
+        
+    
+</style>
+</head>
+	<br>
+    <title>Calculadora</title>
+    <br><br>
+    <h1 class="h1">Calculadora</h1>
+    <div class="card" style="margin-top: 100px" class="tumbnail">
+       
+        <fieldset class="fieldset">
+            <br><br>
+            <div class="input">
+                <div class="h2calc">
+                    <h2>Regra de Três</h2>
+                    <br><br>
+                    
+         <input class='form a'  placeholder=" Digite o 1° valor..." type="number" id='a'  >
+         <b class="estapara">Está para:</b>
+         <input class='form b' placeholder=" Digite o 2° valor..." type="number" id='b' >
+         <br>
+         <br>
+         <input class='form c'  placeholder=" Digite o 3° valor..." type="number" id='c'>
+         <b class="estapara">Está para:</b>
+         <input class='form x' disabled placeholder=" X" type="number" id='x' >
+           
+                </div>
+            </div>
+           <br><br>
+           <input type="button" class="btnCalcular" id="btnCalc" ondblclick="calc()" value="Calcular">
+           <br>
+           <h3 class='result'  id="result" ></h3>
+           
+        </fieldset>
+        
+     </div>
+     <div class="h2">
+     <h2  id="historico">Histórico:</h2>
+     <h3  id="resposta">Resposta:</h3>
+     <h3  id="resposta1">Resposta:</h3>
+     <h3  id="resposta2">Resposta:</h3>
+     <h3  id="resposta3">Resposta:</h3>
+     <h3  id="resposta4">Resposta:</h3>
+     <h3  id="resposta5">Resposta:</h3>
+
+     
+    
+     </div>
+    </form>
+<script>
+
+   var result;
+
+    var resposta1;
+     var resposta2;
+     var resposta3;
+     var resposta4;
+     var resposta5;
+     var resultado;
+
+  function calc() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var c = document.getElementById("c").value;
+        var x = document.getElementById("x").value;
+
+        
+        resultado = (parseInt (c) * parseInt (b)) / parseInt (a);
+        console.log(a + " " + b + " " + c + " " + resultado);
+
+        document.getElementById("x").value = resultado;
+     
+
+
+        
+
+        document.getElementById("result").value = result;
+        document.getElementById("x").value;
+
+        document.getElementById("x").value = parseInt(resultado);
+
+
+
+        resposta5 = resposta4;
+        resposta4 = resposta3;
+        resposta3 = resposta2;
+        resposta2 = resposta1;
+        resposta1 = resultado;
+
+        
+
+        document.getElementById('result').value = resultado
+        document.getElementById('resposta').textContent = resultado
+        document.getElementById('resposta1').textContent = resposta1
+        document.getElementById('resposta2').textContent = resposta2
+        document.getElementById('resposta3').textContent = resposta3
+        document.getElementById('resposta4').textContent = resposta4
+        document.getElementById('resposta5').textContent = resposta5
+        
+
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</body>
+</html>
